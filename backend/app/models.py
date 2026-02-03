@@ -2,6 +2,27 @@ from sqlalchemy import String, Float, ForeignKey, Integer, ForeignKeyConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from .database import Base
 
+
+class MenuPlan(Base):
+    __tablename__ = "menu_plan"
+    # Composite PK: Date and Meal (assuming one entry per meal per day)
+    date: Mapped[str] = mapped_column(String(50), primary_key=True) # Or Date type
+    meal: Mapped[str] = mapped_column(String(200), ForeignKey("recipes.name"), primary_key=True)
+    portions: Mapped[int] = mapped_column(Integer)
+
+class Diet(Base):
+    __tablename__ = "diets"
+    diet: Mapped[str] = mapped_column(String(100), primary_key=True)
+    problematic_component: Mapped[str] = mapped_column(String(100), primary_key=True)
+
+class Preference(Base):
+    __tablename__ = "preferences"
+    # FK to Ingredients name
+    article: Mapped[str] = mapped_column(
+        String(100), primary_key=True
+    )
+    problematic_component: Mapped[str] = mapped_column(String(100), primary_key=True)
+
 class Nutrient(Base):
     __tablename__ = "nutrients"
     
@@ -68,5 +89,6 @@ class MiseEnPlace(Base):
         ),
     )
 
+    # Relationships
     recipe: Mapped["Recipe"] = relationship(back_populates="ingredients_list")
     ingredient: Mapped["Ingredient"] = relationship(back_populates="used_in_recipes")

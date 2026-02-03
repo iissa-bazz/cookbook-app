@@ -1,7 +1,7 @@
 import csv
 from sqlalchemy.orm import Session
 from .database import engine, Base
-from .models import Ingredient, Recipe, MiseEnPlace, Nutrient
+from .models import Ingredient, Recipe, MiseEnPlace, Nutrient, Preference, MenuPlan, Diet
 
 def seed_data():
     # Reset Database
@@ -61,6 +61,38 @@ def seed_data():
                 ))
         
         session.commit()
+        
+        # Diets
+        with open('data/diets.csv', newline='', encoding='utf-8') as f:
+            for row in csv.DictReader(f):
+                session.add(Diet(
+                    diet=row['Diet'], # Per your requirement
+                    problematic_component=row['Problematic_Component']
+                ))
+        
+        
+        # Preferences
+        with open('data/preferences.csv', newline='', encoding='utf-8') as f:
+            for row in csv.DictReader(f):
+                session.add(Preference(
+                    article=row['Ingredient'], # Per your requirement
+                    problematic_component=row['Problematic_Component']
+                ))
+        
+        session.commit()
+                
+                
+        # Menu Plan (NEW)
+        with open('data/menu_plan.csv', newline='', encoding='utf-8') as f:
+            for row in csv.DictReader(f):
+                session.add(MenuPlan(
+                    date=row['Date'],
+                    meal=row['Meal'],
+                    portions=int(row['Portions'])
+                ))
+        
+        session.commit()
+        
         print("Successfully seeded all tables!")
 
 if __name__ == "__main__":

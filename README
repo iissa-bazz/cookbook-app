@@ -1,0 +1,125 @@
+
+# 🍳 Cookbook App
+
+A full-stack web application for managing recipes, ingredients, and nutritional data with **strong consistency** and a focus on high-performance relational data.
+
+## 🚀 Current Setup: Milestone 1
+
+The project is currently in the **Local Development Phase**. The database is containerized via Docker to ensure environment parity, while the FastAPI backend and React frontend run natively for a rapid development loop.
+
+### Technical Specification
+
+* **Backend:** FastAPI (Python 3.10+)
+* **Database:** PostgreSQL 15 (Dockerized)
+* **ORM:** SQLAlchemy 2.0 (using `Mapped` and `mapped_column` types)
+* **Frontend:** React + Vite + TypeScript (Infrastructure ready)
+* **Data Layer:** Support for composite primary keys and association objects for complex recipe instructions.
+
+---
+
+## 🛠 Run Instructions
+
+### 1. Database (Docker)
+
+Ensure Docker is running, then spin up the PostgreSQL instance:
+
+```bash
+docker compose up -d
+
+```
+
+*Note: The database is exposed on host port `5433` to avoid conflicts with local Postgres installations.*
+
+### 2. Backend Setup
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+```
+
+### 3. Initialize & Seed Data
+
+This will recreate the schema and load data from `backend/data/*.csv`:
+
+```bash
+python -m app.seed
+
+```
+
+### 4. Start Development Servers
+
+**Backend:**
+
+```bash
+uvicorn app.main:app --reload
+
+```
+
+**Frontend:**
+
+```bash
+cd frontend
+npm install
+npm run dev
+
+```
+
+---
+
+## 📅 Implementation Plan
+
+### ✅ Stage 1: Foundation & Schema (Completed)
+
+* Set up monorepo structure and Git integration.
+* Configure Dockerized PostgreSQL with `ForeignKeyConstraints`.
+* Implement SQLAlchemy 2.0 models for `Nutrient`, `Ingredient`, `Recipe`, and `MiseEnPlace`.
+* Create an automated seed script for bulk CSV ingestion.
+
+### 🏗 Stage 2: The API & Pydantic Layer (Next)
+
+* **Goal:** Bridge the gap between SQL models and JSON responses.
+* **Tasks:**
+* Create Pydantic `Schemas` to prevent circular recursion when fetching recipes with ingredients.
+* Build `GET /recipes` and `GET /ingredients` endpoints.
+* Implement a `GET /recipes/{name}` endpoint that performs a joined load to fetch the full "Mise en Place."
+
+
+
+### 🎨 Stage 3: Frontend Milestone (The "First Mile")
+
+* **Goal:** A functional read-only UI.
+* **Tasks:**
+* Set up **Tanstack Query** (React Query) for state management.
+* Create a `RecipeTable` component using Tailwind CSS.
+* Implement a `Navbar` to toggle between the Recipes and Ingredients views.
+
+
+
+### 🧪 Stage 4: Modal & Instruction Tuple
+
+* **Goal:** Interactive recipe details.
+* **Tasks:**
+* Create a Modal component in React.
+* Display the "Instruction Tuple" (Ingredient, Quantity, Unit, Preparation).
+* Add a basic search/filter to the Recipe list.
+
+
+
+### 🐳 Stage 5: Production Dockerization
+
+* **Goal:** Package the app for Cloud Run/Firebase.
+* **Tasks:**
+* Write a Multi-stage `Dockerfile` for the Frontend (Nginx).
+* Write a `Dockerfile` for the Backend (Uvicorn).
+* Configure `nginx.conf` for reverse-proxying `/api` requests.
+
+
+
+---
+
+## 🔒 Environment Variables
+
+Copy `.env.example` to `.env` in both the `backend` and `frontend` folders before running. **Never commit `.env` files to version control.**

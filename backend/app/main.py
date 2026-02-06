@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from .database import get_db
-from .models import Recipe, Ingredient, MiseEnPlace, Nutrient
+from .models import Recipe, Ingredient, MiseEnPlace, Nutrient, RecipeNutritionView
 from fastapi.middleware.cors import CORSMiddleware
 import os
 
@@ -40,3 +40,9 @@ def get_recipes(db: Session = Depends(get_db)):
 def get_recipes(db: Session = Depends(get_db)):
     return db.query(Nutrient).all()
 
+
+@app.get("/recipes/nutrition")
+def get_nutrition_report(db: Session = Depends(get_db)):
+    # You can even use filters or order_by on the view!
+    results = db.query(RecipeNutritionView).order_by(RecipeNutritionView.recipe_name.asc()).all()
+    return results

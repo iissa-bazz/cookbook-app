@@ -82,7 +82,7 @@ def seed_data():
         session.commit()
                 
                 
-        # Menu Plan (NEW)
+        # Menu Plan 
         with open('data/menu_plan.csv', newline='', encoding='utf-8') as f:
             for row in csv.DictReader(f):
                 session.add(MenuPlan(

@@ -3,6 +3,9 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 from .database import Base
 
 
+
+###### BASE MODELS #####
+
 class MenuPlan(Base):
     __tablename__ = "menu_plan"
     # Composite PK: Date and Meal (assuming one entry per meal per day)
@@ -92,3 +95,28 @@ class MiseEnPlace(Base):
     # Relationships
     recipe: Mapped["Recipe"] = relationship(back_populates="ingredients_list")
     ingredient: Mapped["Ingredient"] = relationship(back_populates="used_in_recipes")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ##### VIEW MODELS #####
+    
+    
+class RecipeNutritionView(Base):
+    __tablename__ = "recipe_nutrition_view"
+    # Views don't have PKs, but SQLAlchemy requires one to track the object.
+    # We tell it recipe_name is the unique identifier.
+    recipe_name: Mapped[str] = mapped_column(String, primary_key=True)
+    total_kcal: Mapped[float] = mapped_column(Float)
+    total_protein: Mapped[float] = mapped_column(Float)
+    total_fat: Mapped[float] = mapped_column(Float)
+    total_carbs: Mapped[float] = mapped_column(Float)
+    total_sugar: Mapped[float] = mapped_column(Float)
+    total_fiber: Mapped[float] = mapped_column(Float)

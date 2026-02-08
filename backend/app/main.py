@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from .database import get_db
-from .models import Recipe, Ingredient, MiseEnPlace, Nutrient, RecipeNutritionView
+from .models import Recipe, Ingredient, Instruction, Nutrient, RecipeNutritionView
 from fastapi.middleware.cors import CORSMiddleware
 import os
 
@@ -33,7 +33,7 @@ def get_recipes(db: Session = Depends(get_db)):
 
 @app.get("/mise_en_place")
 def get_recipes(db: Session = Depends(get_db)):
-    return db.query(MiseEnPlace).all()
+    return db.query(Instruction).all()
 
 
 @app.get("/nutrients")

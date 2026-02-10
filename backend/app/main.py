@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import text
 from .database import get_db
 from .models import Recipe, Ingredient, Instruction, Nutrient
-from .schemas import PortionRequest, RecipeAvailability
+from .schemas import SuggestionRequest, RecipeAvailability
 from typing import List
 import os
 
@@ -53,40 +53,58 @@ def get_nutrition_report(db: Session = Depends(get_db)):
 """
 
 
-@app.post("/recipes/availability", response_model=List[RecipeAvailability])
+@app.post("/recipes/suggestions", response_model=List[RecipeAvailability])
 def calculate_recipe_costs(
-    request: PortionRequest, 
+    request: SuggestionRequest, 
     db: Session = Depends(get_db)
 ):
     sql = text("""
         SELECT 
             i.recipe AS recipe,
-            ROUND(SUM(price_per_unit * quantity / r.portions)::numeric, 2) AS price_per_portion,
-            COUNT(*) AS nbr_of_ingredients,
-            ROUND(SUM(price_per_unit * quantity * (1.0 / r.portions) * :portions)::numeric, 2) AS price,
+            COUNT(*)                                                                        AS nbr_of_ingredients,
             SUM(
                 CASE 
-                    WHEN (quantity * (1.0 / r.portions) * :portions) > quantity_on_stock THEN 1 
+                    WHEN    (quantity * (:portions/ r.portions) ) > quantity_on_stock 
+                            OR  CURRENT_DATE > expiration_date::date  
+                    THEN 1 
                     ELSE 0 
                 END
-            ) AS missing_ingredients,
+            )                                                                               AS missing_ingredients,
+            SUM(
+                CASE 
+                    WHEN    expiration_date::date - CURRENT_DATE < :scope 
+                            AND expiration_date::date - CURRENT_DATE >= 0 
+                    THEN 1 
+                    ELSE 0 
+                END
+            )                                                                               AS "expiring_within_scope", 
+            string_agg(
+                CASE 
+                    WHEN expiration_date::date - CURRENT_DATE < :scope AND expiration_date::date - CURRENT_DATE >= 0 
+                    THEN CONCAT(i.ingredient, ' (', i.expiration_date, ') ')
+                    ELSE ''
+                END, ''
+            )                                                                               AS "expiring_ingredients",
+            ROUND(SUM(price_per_unit * quantity / r.portions)::numeric, 2)                  AS price_per_portion,
+            ROUND(SUM(price_per_unit * quantity * (:portions/ r.portions) )::numeric, 2)    AS price,
             ROUND( 
                 SUM(
                     CASE 
-                        WHEN (quantity * (1.0 / r.portions) * :portions) > quantity_on_stock 
-                        THEN ((quantity * (1.0 / r.portions) * :portions) - quantity_on_stock) * price_per_unit 
-                        ELSE 0 
+                        WHEN    (quantity * (:portions/ r.portions) ) > quantity_on_stock  
+                                AND expiration_date::date > CURRENT_DATE
+                        THEN ((quantity * (:portions / r.portions) ) - quantity_on_stock) * price_per_unit 
+                        ELSE  quantity * (:portions / r.portions) * price_per_unit
                     END
                 )::numeric, 2
-            ) AS cost
+            )                                                                               AS cost
         FROM recipes r 
         JOIN v_instructions i ON r.name = i.recipe
         GROUP BY i.recipe
-        ORDER BY recipe;
+        ORDER BY  "expiring_within_scope" desc;
     """)
     
-    # We execute with the parameter dictionary
-    result = db.execute(sql, {"portions": request.requested_portions})
+    # execute with the parameter dictionary
+    result = db.execute(sql, {"portions": request.portions, "scope": request.scope})
     
-    # Transform rows into a list of dictionaries for Pydantic to parse
+    # transform rows into a list of dictionaries for Pydantic to parse
     return [dict(row._mapping) for row in result]

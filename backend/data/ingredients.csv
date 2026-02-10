@@ -1,199 +1,199 @@
 Ingredient,Group,Unit,g_Per_Unit,Price_Per_Unit,Store,Quantity_On_Stock,Expiration_Date
-anchovy,anchovy,fillets,6,0.59,Coop,0,2023/07/15
-apples,apple,pieces,150,2.13,Coop,0,2023/07/16
-arborio rice,rice,cups,197,0.79,Coop,0,2024/07/17
-artichoke hearts,artichoke,g,1,0.015,Migros,240,2023/07/18
-aubergine,aubergine,pieces,200,0.76,Coop,0,2023/07/18
-avocado,avocado,pieces,100,2.30,Coop,0,2023/07/18
-baby potatoes,potato,g,1,0.0059,Coop,500,2023/07/18
-bacon,bacon,g,1,0.0185,Coop,0,2023/07/18
-basil,basil,leaves,0.5,0.07375,Coop,20,2023/07/18
-basil,basil,tbsp,1.26,0.3,Coop,20,2023/07/18
-basil leaves,basil,cups,25,4.81,Coop,20,2023/07/18
-basmati rice,rice,g,1,0.006,Coop,2000,2024/07/18
-basmati rice,rice,cups,197,1.182,Coop,10,2024/07/18
-bay,bay,leaves,0.2,0.02888,Coop,10,2023/07/19
-bell pepper,bell pepper,pieces,150,1.26,Coop,0,2023/07/19
-beurre,butter,g,1,0.0132,Coop,250,2023/07/19
-beurre,butter,tbsp,1,0.0132,Coop,20,2023/07/19
-black olives,olives,cups,141,2.2,Coop,2,2023/07/19
-black pepper,pepper,pinches,0.5,0.02145,Coop,50,2023/07/18
-black pepper,pepper,tsp,3,0.1287,Coop,20,2024/07/19
-bread,bread,pieces,67,0.1608,Coop,8,2023/07/19
-bread,bread,g,1,0.0024,Coop,200,2023/07/19
-broth,broth,cups,250,0.105,Coop,20,2024/07/19
-butter,butter,tbsp,14,0.1848,Coop,20,2023/07/20
-butter,butter,g,1,0.0132,Coop,250,2023/07/20
-butternut squash,butternut squash,cups,200,1.80,Coop,4,2023/07/20
-cannellini beans,kidney beans,g,1,0.0069,Coop,1000,2023/07/20
-cardamom,spice,pods,1,0.0781,Coop,10,2023/07/20
-carrot,carrot,pieces,80,0.28,Coop,20,2023/07/21
-carrot,carrot,cups,125,2.96,Coop,8,2023/07/21
-cayenne pepper,pepper,tsp,5,0.341,Coop,20,2023/07/21
-celery,celery,cups,125,0.75,Coop,4,2023/07/21
-celery stalk,celery,pieces,225,1.13,Coop,2,2023/07/21
-cheese,cheese,tbsp,5,0.095,Coop,10,2023/07/22
-cherry tomatoes,tomato,pieces,15,0.126,Coop,10,2023/07/22
-cherry tomatoes,tomato,g,1,0.0084,Coop,500,2023/07/22
-chicken,chicken,fillets,190,7.13,Coop,4,2023/07/22
-chicken broth,chicken broth,cups,250,0.105,Coop,8,2024/07/22
-chicken stock,chicken broth,cups,250,0.105,Coop,8,2024/07/23
-chicken thighs,chicken,pieces,100,1.55,Migros,4,2023/07/23
-chicken thighs,chicken,g,1,0.0155,Migros,800,2023/07/23
-cilantro leaves,herb,cups,17,2.04,Coop,2,2023/07/23
-cilantro leaves,herb,tbsp,3,0.36,Coop,20,2023/07/23
-cinnamon,cinnamon,tsp,7,0.2674,Coop,20,2024/07/25
-citron,lemon,zest,2,0.58,Kitchencorner,4,2023/07/25
-coconut cream,coconut cream,cups,250,1.09,Coop,2,2024/07/25
-coconut milk,coconut milk,ml,0.964,0.0104,Coop,400,2024/07/25
-cod,cod,g,1,0.02,Coop,1000,2023/07/25
-coriander,herb,leaves,0.5,0.06,Coop,20,2023/07/26
-coriander powder,spice,tsp,2,0.24,Coop,20,2024/07/26
-cottage cheese,cottage cheese,g,1,0.0105,Coop,200,2023/07/26
-courgette,zucchini,pieces,200,1.00,Coop,4,2023/07/26
-cucumber,cucumber,pieces,200,2.95,Coop,4,2023/07/26
-cumin powder,spice,tsp,2,0.35,Coop,20,2024/07/27
-curry powder,seasoning,tbsp,6,1.05,Coop,10,2024/07/27
-diced tomatoes,tomato,g,1,0.00465,Violey,500,2023/07/27
-dijon mustard,mustard,tbsp,15,0.37,Coop,10,2024/07/27
-dried basil,basil,tsp,1.5,0.03045,Coop,20,2024/07/27
-dried oregano,oregano,tsp,1.5,0.07695,Coop,20,2024/07/28
-dry white wine,wine,cups,240,4.01,Coop,5,2024/07/28
-dry yeast,yeast,g,1,0.0722,Coop,50,2024/07/28
+anchovy,anchovy,fillets,6,0.59,Coop,0,2026/02/15
+apples,apple,pieces,150,2.13,Coop,0,2026/03/16
+arborio rice,rice,cups,197,0.79,Coop,0,2026/07/17
+artichoke hearts,artichoke,g,1,0.015,Migros,240,2026/03/18
+aubergine,aubergine,pieces,200,0.76,Coop,0,2026/03/18
+avocado,avocado,pieces,100,2.30,Coop,0,2026/03/18
+baby potatoes,potato,g,1,0.0059,Coop,500,2026/03/18
+bacon,bacon,g,1,0.0185,Coop,0,2026/01/18
+basil,basil,leaves,0.5,0.07375,Coop,20,2026/02/18
+basil,basil,tbsp,1.26,0.3,Coop,20,2026/03/18
+basil leaves,basil,cups,25,4.81,Coop,20,2026/02/18
+basmati rice,rice,g,1,0.006,Coop,2000,2027/07/18
+basmati rice,rice,cups,197,1.182,Coop,10,2027/07/18
+bay,bay,leaves,0.2,0.02888,Coop,10,2026/03/19
+bell pepper,bell pepper,pieces,150,1.26,Coop,0,2026/03/19
+beurre,butter,g,1,0.0132,Coop,250,2026/03/19
+beurre,butter,tbsp,1,0.0132,Coop,20,2026/03/19
+black olives,olives,cups,141,2.2,Coop,2,2026/03/19
+black pepper,pepper,pinches,0.5,0.02145,Coop,50,2026/03/18
+black pepper,pepper,tsp,3,0.1287,Coop,20,2026/07/19
+bread,bread,pieces,67,0.1608,Coop,8,2026/03/19
+bread,bread,g,1,0.0024,Coop,200,2026/03/19
+broth,broth,cups,250,0.105,Coop,20,2027/07/19
+butter,butter,tbsp,14,0.1848,Coop,20,2026/03/20
+butter,butter,g,1,0.0132,Coop,250,2026/03/20
+butternut squash,butternut squash,cups,200,1.80,Coop,4,2026/03/20
+cannellini beans,kidney beans,g,1,0.0069,Coop,1000,2026/03/20
+cardamom,spice,pods,1,0.0781,Coop,10,2026/03/20
+carrot,carrot,pieces,80,0.28,Coop,20,2026/03/21
+carrot,carrot,cups,125,2.96,Coop,8,2026/03/21
+cayenne pepper,pepper,tsp,5,0.341,Coop,20,2026/03/21
+celery,celery,cups,125,0.75,Coop,4,2026/03/21
+celery stalk,celery,pieces,225,1.13,Coop,2,2026/03/21
+cheese,cheese,tbsp,5,0.095,Coop,10,2026/03/22
+cherry tomatoes,tomato,pieces,15,0.126,Coop,10,2026/03/22
+cherry tomatoes,tomato,g,1,0.0084,Coop,500,2026/03/22
+chicken,chicken,fillets,190,7.13,Coop,4,2026/01/22
+chicken broth,chicken broth,cups,250,0.105,Coop,8,2026/07/22
+chicken stock,chicken broth,cups,250,0.105,Coop,8,2027/07/23
+chicken thighs,chicken,pieces,100,1.55,Migros,4,2026/02/23
+chicken thighs,chicken,g,1,0.0155,Migros,800,2026/02/23
+cilantro leaves,herb,cups,17,2.04,Coop,2,2026/02/23
+cilantro leaves,herb,tbsp,3,0.36,Coop,20,2026/02/23
+cinnamon,cinnamon,tsp,7,0.2674,Coop,20,2027/07/25
+citron,lemon,zest,2,0.58,Kitchencorner,4,2026/03/25
+coconut cream,coconut cream,cups,250,1.09,Coop,2,2026/07/25
+coconut milk,coconut milk,ml,0.964,0.0104,Coop,400,2026/07/25
+cod,cod,g,1,0.02,Coop,1000,2026/01/25
+coriander,herb,leaves,0.5,0.06,Coop,20,2026/02/26
+coriander powder,spice,tsp,2,0.24,Coop,20,2027/07/26
+cottage cheese,cottage cheese,g,1,0.0105,Coop,200,2026/02/26
+courgette,zucchini,pieces,200,1.00,Coop,4,2026/03/26
+cucumber,cucumber,pieces,200,2.95,Coop,4,2026/03/26
+cumin powder,spice,tsp,2,0.35,Coop,20,2027/07/27
+curry powder,seasoning,tbsp,6,1.05,Coop,10,2027/07/27
+diced tomatoes,tomato,g,1,0.00465,Violey,500,2026/03/27
+dijon mustard,mustard,tbsp,15,0.37,Coop,10,2026/07/27
+dried basil,basil,tsp,1.5,0.03045,Coop,20,2026/07/27
+dried oregano,oregano,tsp,1.5,0.07695,Coop,20,2027/07/28
+dry white wine,wine,cups,240,4.01,Coop,5,2026/07/28
+dry yeast,yeast,g,1,0.0722,Coop,50,2026/07/28
 eau,water,ml,1,0,Coop,100000000,2030/07/28
-egg,egg,pieces,60,0.87,Coop,12,2023/07/28
-egg yolks,egg yolk,pieces,15,0.22,Coop,12,2023/06/29
-eggs,egg,pieces,60,0.87,Coop,12,2023/06/29
-extrait de vanille,vanille,tsp,5,0.97,Coop,10,2024/06/29
-farine,flour,g,1,0.0021,Coop,1000,2024/06/29
-farine de sarrasin,flour,g,1,0.015,Coop,1000,2024/06/29
-fenugreek leaves,herb,tsp,2,0.07,Asia Markt,20,2023/06/28
-feta,feta,g,1,0.0235,Coop,200,2023/06/28
-fresh sushi fish,fish,g,1,0.0873,Farmy,500,2023/06/28
-fresh fish fillet,fish,g,1,0.02,Farmy,500,2023/06/28
-fish sauce,fish sauce,tsp,8,0.15,Coop,20,2024/06/28
-flour,flour,tbsp,5,0.0105,Coop,20,2024/06/28
-flour,flour,g,1,0.0021,Coop,1000,2024/06/27
-fresh coriander leaves,herb,cups,17,2.04,Coop,2,2023/06/27
-fromage râpé,cheese,g,1,0.019,Coop,200,2023/06/27
-frozen peas,peas,cups,155,0.82,Coop,4,2023/09/27
-garlic,garlic,cloves,5,0.08,Coop,10,2023/06/27
-garlic,garlic,tsp,3,0.048,Coop,10,2023/06/26
-ginger,ginger,g,1,0.06,Coop,200,2023/06/26
-ginger,ginger,pieces,5,0.12,Coop,2,2023/06/26
-ginger,ginger,cubes,0.4,0.0096,Coop,0,2023/06/26
-ginger,ginger,tbsp,5,0.278,Coop,20,2023/06/26
-goat cheese,goat cheese,g,1,0.0233,Coop,200,2023/06/25
-gorgonzola,gorgonzola,g,1,0.0238,Coop,200,2023/06/25
-grated cheese,cheese,g,1,0.0190,Coop,200,2023/06/25
-green beans,green beans,cups,150,0.96,Coop,2,2023/06/25
-green bell pepper,bell pepper,pieces,150,0.87,Farmy,4,2023/06/25
-green chile,chili,g,1,0.0125,Dalchini,200,2023/06/24
-green olives,olives,cups,141,2.78,Coop,2,2023/06/24
-ground beef,beef,g,1,0.022,Coop,1000,2023/06/24
-ground black pepper,pepper,tsp,2.5,0.10725,Coop,20,2024/06/24
-ground cinnamon,cinnamon,tsp,2.5,0.0955,Coop,20,2024/06/24
-ground clove (clou de girofle),spice,tsp,2.5,0.11725,Coop,20,2024/06/23
-ground coriander,spice,tsp,2.5,0.15525,Coop,20,2024/06/23
-ground cumin,spice,tsp,3,0.525,Coop,20,2024/06/23
-ground turmeric,spice,tsp,3,0.1332,Coop,20,2024/06/23
-guanciale,bacon,g,1,0.0508,Coop,200,2023/06/23
-heavy cream,heavy cream,ml,0.97,0.007954,Coop,200,2023/07/22
-italian pasta,pasta,cups,125,4.675,Coop,4,2024/06/22
-jalapeno,chili,pieces,20,0.72,La Guadalupana,10,2023/07/22
-jambon,ham,slice,28,0.8652,Coop,8,2023/06/22
-kosher salt,salt,tsp,6,0.0529,Chef Store,20,2024/06/22
-lait,milk,ml,1,0.00195,Coop,1000,2023/06/21
-lasagna noodles,pasta,pieces,10,0.158,Coop,20,2024/06/21
-lasagna noodles,pasta,g,1,0.0158,Coop,1000,2024/06/21
-lemon,lemon,pieces,100,0.24,Coop,4,2023/06/21
-lemon juice,lemon,tbsp,15,0.045,Coop,20,2023/06/21
-lentils,dried lentil,cups,200,1.28,Coop,10,2024/06/20
-lettuce,lettuce,pieces,800,3.20,Coop,2,2023/06/21
-mexican cheese blend,cheese,cups,120,1.56,Coop,2,2023/06/20
-milk,milk,ml,1.2,0.00234,Coop,1000,2023/06/20
-mozzarella,mozzarella,g,1,0.0105,Coop,200,2023/06/21
-mushrooms,mushroom,g,1,0.0097,Coop,200,2023/06/29
-mustard,mustard,tbsp,15,0.1725,Coop,20,2023/09/29
-nori sheets,nori sheets,sheets,5,2.3,Farmy,20,2024/06/29
-nutmeg,nutmeg,pinches,0.3,0.015,Coop,20,2024/06/29
-oeuf,egg,pieces,60,0.52,Coop,12,2023/06/29
-oeufs,egg,pieces,60,0.52,Coop,12,2023/06/28
-oil,oil,tbsp,15,0.81,Coop,20,2024/06/28
-oil-poached tomatos,dried tomatos,pieces,16,0.74,Farmy,20,2024/06/28
-olive oil,olive oil,ml,0.91,0.0165,Coop,1000,2024/06/28
-olive oil,olive oil,tbsp,13.5,0.22275,Coop,20,2024/06/28
-olive oil,olive oil,cups,213,3.5145,Coop,4,2024/06/26
-onion,onion,cups,160,0.34,Coop,4,2023/06/26
-onion,onion,pieces,120,0.25,Coop,5,2023/06/26
-onions,onion,pieces,120,0.25,Coop,5,2023/06/26
-oregano,oregano,tbsp,3,0.1539,Coop,20,2023/06/26
-paprika,paprika,tsp,3,0.0576,Coop,20,2023/06/29
-parmesan,cheese,g,1,0.0455,Coop,20,2023/06/29
-parmesan,cheese,cups,120,10.92,Coop,2,2023/06/29
-parmesan,cheese,tbsp,5,0.2275,Coop,20,2023/06/29
-parsley,parsley,tbsp,3,0.27,Coop,20,2023/11/29
-parsley,parsley,cups,15,1.35,Coop,2,2023/06/29
-pecorino,cheese,g,1,0.0315,Coop,200,2023/06/29
-pepper,pepper,pinches,0.5,0.031,Coop,20,2024/06/29
-pepper,pepper,tsp,3,0.19,Coop,20,2024/06/29
-pizza flour,flour,g,1,0.00295,Coop,1000,2023/11/29
-potatoes,potato,kg,1000,0.8,Coop,1,2023/06/29
-potatoes,potato,g,1,0.0008,Coop,1000,2023/06/29
-red chile,chili,pieces,45,0.56,Coop,10,2023/06/29
-red chili powder,chili,tsp,3,0.07173,Coop,20,2024/06/29
-red pepper,paprika,tsp,3,0.0576,Coop,20,2023/06/29
-red peppers,bell pepper,cups,110,1.18,Coop,4,2023/06/29
-red wine,wine,cups,240,8.32,Coop,2,2024/06/29
-refried beans,kidney beans,g,1,0.0069,Coop,800,2023/06/29
-rice vinegar,vinegar,cups,150,5.28,Coop,4,2023/10/29
-ricotta,ricotta,g,1,0.014,Coop,200,2023/06/29
-romaine lettuce,lettuce,heads,800,8.32,Coop,1,2023/06/29
-rosemary,herb,tsp,3,0.11,Coop,20,2024/06/29
-rosemary,herb,tbsp,5,0.18,Coop,20,2024/06/29
-saffron,spice,pinches,0.5,4.75,Coop,20,2024/06/29
-salt,salt,tbsp,14,0.0854,Coop,20,2024/06/29
-salt,salt,pinches,0.5,0.00305,Coop,20,2024/06/29
-salt,salt,tsp,5,0.0305,Coop,20,2024/06/29
-sel,salt,tsp,5,0.0305,Coop,20,2024/06/29
-sel,salt,pinches,0.5,0.00305,Coop,20,2024/06/29
-sour cream,sour cream,package,200,1.7,Coop,2,2023/06/29
-soy sauce,soy sauce,ml,1,0.0213,Coop,500,2024/06/29
-spaghetti,pasta,g,1,0.0014,Coop,1000,2024/06/29
-spinach,spinach,g,1,0.0232,Coop,500,2023/06/29
-sucre,sugar,g,1,0.0027,Coop,1000,2024/06/29
-sugar,sugar,g,1,0.0027,Coop,1000,2024/06/29
-sugar,sugar,tsp,4,0.0108,Coop,20,2024/06/29
-sugar,sugar,tbsp,12,0.0324,Coop,20,2024/06/29
-sunflower oil,oil,tbsp,15,0.81,Coop,20,2024/06/29
-sushi rice,rice,cups,180,1.61,Coop,2,2024/06/29
-taco seasoning,seasoning,cups,250,13.27,Coop,2,2024/06/29
-tandoori powder,seasoning,tsp,3,0.43,Farmy,20,2024/06/29
-thick cream,heavy cream,ml,1.1,0.00902,Farmy,200,2023/06/29
-thyme,herb,tsp,3,0.42,Coop,20,2023/11/29
-thyme,herb,tbsp,5,0.7,Coop,20,2023/11/29
-thyme,herb,sprig,5,0.7,Coop,5,2023/11/29
-tomato bouillon,broth,package,102,2.50,Coop,8,2024/06/29
-tomato paste,tomato paste,cups,240,2.832,Coop,4,2024/06/29
-tomato paste,tomato paste,tbsp,15,0.177,Coop,20,2024/06/29
-tomato sauce,tomato sauce,g,1,0.00871,Coop,1000,2023/09/29
-tomato sauce,tomato sauce,cups,240,2.09,Coop,4,2023/09/29
-tomatoes,tomato,pieces,100,0.99,Coop,10,2023/06/29
-tomatoes,tomato,g,1,0.0099,Coop,1000,2023/06/29
-tortillas,bread,pieces,40,0.2,Migros,8,2023/09/29
-turmeric powder,spice,tsp,3,0.1332,Coop,20,2024/06/29
-vegetable broth,vegetable broth,ml,1,0.00042,Coop,8000,2024/06/29
-virgin coconut oil,oil,tbsp,14,1.63,Prozis,20,2024/06/29
-wasabi,wasabi,g,1,0.11,Coop,50,2024/06/29
+egg,egg,pieces,60,0.87,Coop,12,2026/03/28
+egg yolks,egg yolk,pieces,15,0.22,Coop,12,2026/02/28
+eggs,egg,pieces,60,0.87,Coop,12,2026/02/22
+extrait de vanille,vanille,tsp,5,0.97,Coop,10,2026/06/29
+farine,flour,g,1,0.0021,Coop,1000,2027/06/29
+farine de sarrasin,flour,g,1,0.015,Coop,1000,2027/06/29
+fenugreek leaves,herb,tsp,2,0.07,Asia Markt,20,2026/02/28
+feta,feta,g,1,0.0235,Coop,200,2026/02/28
+fresh sushi fish,fish,g,1,0.0873,Farmy,500,2026/02/28
+fresh fish fillet,fish,g,1,0.02,Farmy,500,2026/02/28
+fish sauce,fish sauce,tsp,8,0.15,Coop,20,2026/06/28
+flour,flour,tbsp,5,0.0105,Coop,20,2027/06/28
+flour,flour,g,1,0.0021,Coop,1000,2027/06/27
+fresh coriander leaves,herb,cups,17,2.04,Coop,2,2026/02/27
+fromage râpé,cheese,g,1,0.019,Coop,200,2026/02/27
+frozen peas,peas,cups,155,0.82,Coop,4,2026/03/27
+garlic,garlic,cloves,5,0.08,Coop,10,2026/02/27
+garlic,garlic,tsp,3,0.048,Coop,10,2026/02/26
+ginger,ginger,g,1,0.06,Coop,200,2026/02/26
+ginger,ginger,pieces,5,0.12,Coop,2,2026/02/26
+ginger,ginger,cubes,0.4,0.0096,Coop,0,2026/02/26
+ginger,ginger,tbsp,5,0.278,Coop,20,2026/02/26
+goat cheese,goat cheese,g,1,0.0233,Coop,200,2026/02/25
+gorgonzola,gorgonzola,g,1,0.0238,Coop,200,2026/02/25
+grated cheese,cheese,g,1,0.0190,Coop,200,2026/02/25
+green beans,green beans,cups,150,0.96,Coop,2,2026/02/25
+green bell pepper,bell pepper,pieces,150,0.87,Farmy,4,2026/02/25
+green chile,chili,g,1,0.0125,Dalchini,200,2026/02/24
+green olives,olives,cups,141,2.78,Coop,2,2026/02/24
+ground beef,beef,g,1,0.022,Coop,1000,2026/02/24
+ground black pepper,pepper,tsp,2.5,0.10725,Coop,20,2027/06/24
+ground cinnamon,cinnamon,tsp,2.5,0.0955,Coop,20,2027/06/24
+ground clove (clou de girofle),spice,tsp,2.5,0.11725,Coop,20,2027/06/23
+ground coriander,spice,tsp,2.5,0.15525,Coop,20,2027/06/23
+ground cumin,spice,tsp,3,0.525,Coop,20,2027/06/23
+ground turmeric,spice,tsp,3,0.1332,Coop,20,2027/06/23
+guanciale,bacon,g,1,0.0508,Coop,200,2026/02/23
+heavy cream,heavy cream,ml,0.97,0.007954,Coop,200,2026/03/22
+italian pasta,pasta,cups,125,4.675,Coop,4,2027/06/22
+jalapeno,chili,pieces,20,0.72,La Guadalupana,10,2026/03/22
+jambon,ham,slice,28,0.8652,Coop,8,2026/02/22
+kosher salt,salt,tsp,6,0.0529,Chef Store,20,2027/06/22
+lait,milk,ml,1,0.00195,Coop,1000,2026/02/21
+lasagna noodles,pasta,pieces,10,0.158,Coop,20,2027/06/21
+lasagna noodles,pasta,g,1,0.0158,Coop,1000,2027/06/21
+lemon,lemon,pieces,100,0.24,Coop,4,2026/02/21
+lemon juice,lemon,tbsp,15,0.045,Coop,20,2026/02/21
+lentils,dried lentil,cups,200,1.28,Coop,10,2026/06/20
+lettuce,lettuce,pieces,800,3.20,Coop,2,2026/02/21
+mexican cheese blend,cheese,cups,120,1.56,Coop,2,2026/02/20
+milk,milk,ml,1.2,0.00234,Coop,1000,2026/02/20
+mozzarella,mozzarella,g,1,0.0105,Coop,200,2026/02/21
+mushrooms,mushroom,g,1,0.0097,Coop,200,2026/02/22
+mustard,mustard,tbsp,15,0.1725,Coop,20,2026/03/29
+nori sheets,nori sheets,sheets,5,2.3,Farmy,20,2026/06/29
+nutmeg,nutmeg,pinches,0.3,0.015,Coop,20,2027/06/29
+oeuf,egg,pieces,60,0.52,Coop,12,2026/02/22
+oeufs,egg,pieces,60,0.52,Coop,12,2026/02/28
+oil,oil,tbsp,15,0.81,Coop,20,2026/06/28
+oil-poached tomatos,dried tomatos,pieces,16,0.74,Farmy,20,2026/06/28
+olive oil,olive oil,ml,0.91,0.0165,Coop,1000,2026/06/28
+olive oil,olive oil,tbsp,13.5,0.22275,Coop,20,2027/06/28
+olive oil,olive oil,cups,213,3.5145,Coop,4,2027/06/26
+onion,onion,cups,160,0.34,Coop,4,2026/02/26
+onion,onion,pieces,120,0.25,Coop,5,2026/02/26
+onions,onion,pieces,120,0.25,Coop,5,2026/02/26
+oregano,oregano,tbsp,3,0.1539,Coop,20,2026/02/26
+paprika,paprika,tsp,3,0.0576,Coop,20,2026/02/22
+parmesan,cheese,g,1,0.0455,Coop,20,2026/03/22
+parmesan,cheese,cups,120,10.92,Coop,2,2026/03/22
+parmesan,cheese,tbsp,5,0.2275,Coop,20,2026/03/22
+parsley,parsley,tbsp,3,0.27,Coop,20,2026/11/29
+parsley,parsley,cups,15,1.35,Coop,2,2026/03/22
+pecorino,cheese,g,1,0.0315,Coop,200,2026/03/22
+pepper,pepper,pinches,0.5,0.031,Coop,20,2027/06/29
+pepper,pepper,tsp,3,0.19,Coop,20,2027/06/29
+pizza flour,flour,g,1,0.00295,Coop,1000,2026/11/29
+potatoes,potato,kg,1000,0.8,Coop,1,2026/03/13
+potatoes,potato,g,1,0.0008,Coop,1000,2026/03/13
+red chile,chili,pieces,45,0.56,Coop,10,2026/03/13
+red chili powder,chili,tsp,3,0.07173,Coop,20,2026/06/29
+red pepper,paprika,tsp,3,0.0576,Coop,20,2026/03/13
+red peppers,bell pepper,cups,110,1.18,Coop,4,2026/03/13
+red wine,wine,cups,240,8.32,Coop,2,2026/06/29
+refried beans,kidney beans,g,1,0.0069,Coop,800,2026/03/13
+rice vinegar,vinegar,cups,150,5.28,Coop,4,2026/03/08
+ricotta,ricotta,g,1,0.014,Coop,200,2026/03/08
+romaine lettuce,lettuce,heads,800,8.32,Coop,1,2026/03/08
+rosemary,herb,tsp,3,0.11,Coop,20,2026/06/29
+rosemary,herb,tbsp,5,0.18,Coop,20,2026/06/29
+saffron,spice,pinches,0.5,4.75,Coop,20,2026/06/29
+salt,salt,tbsp,14,0.0854,Coop,20,2027/06/29
+salt,salt,pinches,0.5,0.00305,Coop,20,2027/06/29
+salt,salt,tsp,5,0.0305,Coop,20,2027/06/29
+sel,salt,tsp,5,0.0305,Coop,20,2027/06/29
+sel,salt,pinches,0.5,0.00305,Coop,20,2027/06/29
+sour cream,sour cream,package,200,1.7,Coop,2,2026/03/08
+soy sauce,soy sauce,ml,1,0.0213,Coop,500,2026/06/29
+spaghetti,pasta,g,1,0.0014,Coop,1000,2027/06/29
+spinach,spinach,g,1,0.0232,Coop,500,2026/03/05
+sucre,sugar,g,1,0.0027,Coop,1000,2026/06/29
+sugar,sugar,g,1,0.0027,Coop,1000,2026/06/29
+sugar,sugar,tsp,4,0.0108,Coop,20,2026/06/29
+sugar,sugar,tbsp,12,0.0324,Coop,20,2026/06/29
+sunflower oil,oil,tbsp,15,0.81,Coop,20,2027/06/29
+sushi rice,rice,cups,180,1.61,Coop,2,2027/06/29
+taco seasoning,seasoning,cups,250,13.27,Coop,2,2027/06/29
+tandoori powder,seasoning,tsp,3,0.43,Farmy,20,2027/06/29
+thick cream,heavy cream,ml,1.1,0.00902,Farmy,200,2026/03/05
+thyme,herb,tsp,3,0.42,Coop,20,2026/11/29
+thyme,herb,tbsp,5,0.7,Coop,20,2026/11/29
+thyme,herb,sprig,5,0.7,Coop,5,2026/11/29
+tomato bouillon,broth,package,102,2.50,Coop,8,2026/06/29
+tomato paste,tomato paste,cups,240,2.832,Coop,4,2026/06/29
+tomato paste,tomato paste,tbsp,15,0.177,Coop,20,2026/06/29
+tomato sauce,tomato sauce,g,1,0.00871,Coop,1000,2026/03/29
+tomato sauce,tomato sauce,cups,240,2.09,Coop,4,2026/03/29
+tomatoes,tomato,pieces,100,0.99,Coop,10,2026/03/05
+tomatoes,tomato,g,1,0.0099,Coop,1000,2026/03/02
+tortillas,bread,pieces,40,0.2,Migros,8,2026/03/29
+turmeric powder,spice,tsp,3,0.1332,Coop,20,2026/06/29
+vegetable broth,vegetable broth,ml,1,0.00042,Coop,8000,2026/06/29
+virgin coconut oil,oil,tbsp,14,1.63,Prozis,20,2026/06/29
+wasabi,wasabi,g,1,0.11,Coop,50,2026/06/29
 water,water,tbsp,15,0,Coop,20,2030/12/31
 water,water,cups,284,0,Coop,10,2030/12/31
 water,water,ml,1,0,Coop,10000000000,2030/12/31
 water,water,cl,10,0,Coop,10000000000,2030/12/31
-white sugar,sugar,tsp,4,0.0108,Coop,4,2024/06/29
-white wine,wine,cups,240,0.72,Coop,4,2024/06/29
-white wine,wine,ml,1,0.003,Coop,500,2024/06/29
-yellow onion,onion,cups,160,0.5,Coop,4,2023/06/29
-yogurt,yogurt,g,1,0.0042,Coop,250,2023/06/29
-zucchini,zucchini,g,1,0.005,Coop,400,2023/06/29
-zucchini,zucchini,cups,113,0.565,Coop,4,2023/06/29
-zucchini,zucchini,pieces,200,1.0,Coop,4,2023/06/29
+white sugar,sugar,tsp,4,0.0108,Coop,4,2027/06/29
+white wine,wine,cups,240,0.72,Coop,4,2026/06/29
+white wine,wine,ml,1,0.003,Coop,500,2026/06/29
+yellow onion,onion,cups,160,0.5,Coop,4,2026/03/02
+yogurt,yogurt,g,1,0.0042,Coop,250,2026/03/02
+zucchini,zucchini,g,1,0.005,Coop,400,2026/03/02
+zucchini,zucchini,cups,113,0.565,Coop,4,2026/03/02
+zucchini,zucchini,pieces,200,1.0,Coop,4,2026/03/02

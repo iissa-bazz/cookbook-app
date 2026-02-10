@@ -176,30 +176,55 @@ def seed_data():
                                 CREATE OR REPLACE VIEW v_meal_price_per_portion AS
                                 SELECT  
                                     i.recipe        AS recipe,
-                                    ROUND(SUM(price_per_unit *quantity/portions)::numeric,2)    AS price_per_portion,
-                                    MIN(r.portions )                                            AS default_portions,
                                     COUNT(*)                                                    AS nbr_of_ingredients,
-                                    ROUND(SUM(price_per_unit * quantity )::numeric,2)           AS default_price,
                                     SUM(
                                         CASE 
-                                            WHEN quantity > quantity_on_stock THEN 1 
+                                            WHEN    quantity > quantity_on_stock 
+                                                    OR  CURRENT_DATE > expiration_date::date  THEN 1 
                                             ELSE 0 
                                         END
                                     )                                                           AS missing_ingredients,
+                                    SUM(
+                                        CASE 
+                                            WHEN    expiration_date::date - CURRENT_DATE < scope 
+                                                    AND expiration_date::date - CURRENT_DATE >= 0 
+                                            THEN 1 
+                                            ELSE 0 
+                                        END
+                                    )                                                           AS "Expiring within scope days", 
+                                    string_agg(
+                                        CASE 
+                                            WHEN expiration_date::date - CURRENT_DATE < scope AND expiration_date::date - CURRENT_DATE >= 0 
+                                            THEN CONCAT(i.ingredient, ' (', i.expiration_date, ') ')
+                                            ELSE ''
+                                        END, ''
+                                    )                                                           AS "Expiring ingredients",
+                                    MIN( 
+                                        CASE 
+                                            WHEN i.expiration_date::date - CURRENT_DATE < 0 
+                                            THEN (CURRENT_DATE + scope)::date 
+                                            ELSE i.expiration_date 
+                                        END 
+                                    )                                                           AS nearest_expiration_date,
+                                    ROUND(SUM(price_per_unit *quantity/portions)::numeric,2)    AS price_per_portion,
+                                    MIN(r.portions )                                            AS default_portions,
+                                    ROUND(SUM(price_per_unit * quantity )::numeric,2)           AS default_price,
                                     ROUND( 
                                         SUM(
                                             CASE 
-                                                WHEN quantity > quantity_on_stock 
+                                                WHEN    quantity > quantity_on_stock  
+                                                        AND expiration_date::date > CURRENT_DATE
                                                 THEN (quantity - quantity_on_stock) * price_per_unit 
-                                                ELSE 0 
+                                                ELSE quantity  * price_per_unit
                                             END
                                         )::numeric, 2
-                                    )                                                           AS default_Cost
+                                    )                                                           AS default_cost
                                     
-                                FROM recipes r 
-                                JOIN v_instructions i ON  r.name = i.recipe
+                                FROM recipes r
+                                CROSS JOIN (SELECT 14 AS scope) s  -- using constant for expiration scope parameter
+                                JOIN (SELECT * FROM v_instructions ORDER BY expiration_date ) i ON  r.name = i.recipe
                                 GROUP BY i.recipe
-                                ORDER BY recipe;
+                                ORDER BY "Expiring within scope days" desc, default_cost asc;
                                 """))
         connection.commit()
         print("Successfully seeded all tables!")

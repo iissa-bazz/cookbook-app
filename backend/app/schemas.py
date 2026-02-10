@@ -1,12 +1,15 @@
 from pydantic import BaseModel
 
-class PortionRequest(BaseModel):
-    requested_portions: int
+class SuggestionRequest(BaseModel):
+    portions: float
+    scope: int
 
 class RecipeAvailability(BaseModel):
     recipe: str
-    price_per_portion: float
     nbr_of_ingredients: int
-    price: float
     missing_ingredients: int
+    expiring_within_scope: int
+    expiring_ingredients: str
+    price_per_portion: float
+    price: float
     cost: float

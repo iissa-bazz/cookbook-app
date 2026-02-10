@@ -11,7 +11,7 @@ class MenuPlan(Base):
     __tablename__ = "menu_plan"
     # Composite PK: Date and Meal (assuming one entry per meal per day)
     date: Mapped[datetime] = mapped_column(Date, primary_key=True) 
-    meal: Mapped[str] = mapped_column(String(200), ForeignKey("recipes.name"), primary_key=True)
+    meal: Mapped[str] = mapped_column(String(200), ForeignKey("recipes.name", ondelete='CASCADE', onupdate='CASCADE'), primary_key=True)
     portions: Mapped[float] = mapped_column(Float)
 
 class Diet(Base):
@@ -55,12 +55,12 @@ class Ingredient(Base):
     __tablename__ = "ingredients"
     name: Mapped[str] = mapped_column(String(100), primary_key=True)
     # Foreign Key to Nutrients
-    group: Mapped[str] = mapped_column(ForeignKey("nutrients.ingredient_group"))
+    group: Mapped[str] = mapped_column(ForeignKey("nutrients.ingredient_group", ondelete='CASCADE', onupdate='CASCADE'))
     unit: Mapped[str] = mapped_column(String(50), primary_key=True)
     g_per_unit : Mapped[float] = mapped_column(Float)
     price_per_unit : Mapped[float] = mapped_column(Float)
     store: Mapped[str] = mapped_column(String(50))
-    quantity_on_stock : Mapped[float] = mapped_column(Float)
+    quantity_on_stock : Mapped[float] = mapped_column(Float, nullable=False)
     expiration_date: Mapped[datetime] = mapped_column(Date, nullable=True)   
     
     
@@ -82,7 +82,7 @@ class Recipe(Base):
 class Instruction(Base):
     __tablename__ = "instructions"
     
-    recipe: Mapped[str] = mapped_column(ForeignKey("recipes.name"), primary_key=True)
+    recipe: Mapped[str] = mapped_column(ForeignKey("recipes.name", ondelete='CASCADE', onupdate='CASCADE'), primary_key=True)
     # Note: We remove the individual ForeignKeys from these two lines...
     ingredient: Mapped[str] = mapped_column(String(100), primary_key=True)
     unit: Mapped[str] = mapped_column(String(50), primary_key=True)
@@ -114,7 +114,7 @@ class Instruction(Base):
     
     ##### VIEW MODELS #####
     
-    
+"""    
 class InstructionsView(Base):
     __tablename__ = "v_instructions"
     # Views don't have PKs, but SQLAlchemy requires one to track the object.
@@ -132,5 +132,5 @@ class InstructionsView(Base):
     total_carbs: Mapped[float] = mapped_column(Float)
     total_sugar: Mapped[float] = mapped_column(Float)
     total_fiber: Mapped[float] = mapped_column(Float)
-    
+"""
     

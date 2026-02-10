@@ -2,7 +2,7 @@ Ingredient,Group,Unit,g_Per_Unit,Price_Per_Unit,Store,Quantity_On_Stock,Expirati
 anchovy,anchovy,fillets,6,0.59,Coop,0,2023/07/15
 apples,apple,pieces,150,2.13,Coop,0,2023/07/16
 arborio rice,rice,cups,197,0.79,Coop,0,2024/07/17
-artichoke hearts,artichoke,g,1,0.0196,Coop,200,2023/07/18
+artichoke hearts,artichoke,g,1,0.015,Migros,240,2023/07/18
 aubergine,aubergine,pieces,200,0.76,Coop,0,2023/07/18
 avocado,avocado,pieces,100,2.30,Coop,0,2023/07/18
 baby potatoes,potato,g,1,0.0059,Coop,500,2023/07/18
@@ -46,7 +46,7 @@ cinnamon,cinnamon,tsp,7,0.2674,Coop,20,2024/07/25
 citron,lemon,zest,2,0.58,Kitchencorner,4,2023/07/25
 coconut cream,coconut cream,cups,250,1.09,Coop,2,2024/07/25
 coconut milk,coconut milk,ml,0.964,0.0104,Coop,400,2024/07/25
-cod,cod,g,1,0.053,Coop,1000,2023/07/25
+cod,cod,g,1,0.02,Coop,1000,2023/07/25
 coriander,herb,leaves,0.5,0.06,Coop,20,2023/07/26
 coriander powder,spice,tsp,2,0.24,Coop,20,2024/07/26
 cottage cheese,cottage cheese,g,1,0.0105,Coop,200,2023/07/26
@@ -70,7 +70,7 @@ farine de sarrasin,flour,g,1,0.015,Coop,1000,2024/06/29
 fenugreek leaves,herb,tsp,2,0.07,Asia Markt,20,2023/06/28
 feta,feta,g,1,0.0235,Coop,200,2023/06/28
 fresh sushi fish,fish,g,1,0.0873,Farmy,500,2023/06/28
-fresh fish fillet,fish,g,1,0.0873,Farmy,500,2023/06/28
+fresh fish fillet,fish,g,1,0.02,Farmy,500,2023/06/28
 fish sauce,fish sauce,tsp,8,0.15,Coop,20,2024/06/28
 flour,flour,tbsp,5,0.0105,Coop,20,2024/06/28
 flour,flour,g,1,0.0021,Coop,1000,2024/06/27

@@ -11,10 +11,10 @@ export default function RecipeListPage() {
     defaultValues: { portions: 4, scope: 14 }
   });
 
-  // Watch values to make the query reactive
+  // watch values to make the query reactive
   const currentParams = watch();
 
-  // 2. Fetch data based on form state
+  // fetch data based on form state
   const { data: suggestions, isLoading, isError } = useQuery({
     queryKey: queryKeys.recipes.suggestions(currentParams),
     queryFn: () => fetchSuggestions(currentParams),
@@ -56,7 +56,7 @@ export default function RecipeListPage() {
                 <td>
                   <Link to={`/recipes/${encodeURIComponent(r.recipe)}`}><strong>{r.recipe}</strong></Link>
                 </td>
-                <td style={{ color: r.missing_ingredients > 0 ? 'orange' : 'green' }}>
+                <td style={{ color: r.missing_ingredients > 0 ? 'red' : 'green' }}>
                    {r.missing_ingredients} / {r.nbr_of_ingredients}
                 </td>
                 <td title={r.expiring_ingredients}>

@@ -10,7 +10,7 @@ export default function RecipeDetails() {
   const { data: ingredients, isLoading } = useQuery({
     queryKey: queryKeys.recipes.instructions(),
     queryFn: fetchInstructions,
-    // The "Magic" part: Filter the global list for just this recipe
+    // filter the global list for just this recipe
     select: (allInstructions) => 
       allInstructions.filter(item => item.recipe === decodedName),
     staleTime: 1000 * 60 * 5, // Cache instructions for 5 minutes

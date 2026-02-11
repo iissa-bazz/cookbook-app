@@ -12,6 +12,7 @@ frontend/.env
 frontend/.env.local
 
 # Docker & OS
+Demo.ipynb
 response.json
 .env
 .DS_Store

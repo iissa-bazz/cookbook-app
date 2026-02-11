@@ -27,3 +27,18 @@ docker compose up -d
 
 - Frontend: http://localhost
 - API Documentation (Swagger): http://localhost:8000/docs
+
+
+
+
+## 🛠 Tech Stack
+
+* **Frontend:** React, TypeScript, Vite, TanStack Query, React Router, Axios.
+* **Backend:** FastAPI (Python), SQLAlchemy ORM.
+* **Infrastructure:** PostgreSQL, Docker, Nginx.
+
+## 💡 Key Features to Explore
+
+1. **Dynamic Suggestions:** On the main page, adjust the "Portions" or "Scope" (days until expiration). The table updates reactively to show the most cost-effective recipes.
+2. **Pantry Logic:** The app tracks missing vs. expiring ingredients. Check a recipe's detail view to see exactly what you need.
+3. **Error Handling:** The system includes a global Error Boundary and React Query `throwOnError` integration to catch and display API failures gracefully.

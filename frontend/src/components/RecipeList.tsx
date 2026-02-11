@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useForm } from 'react-hook-form';
 import { fetchSuggestions, queryKeys } from '../api/client';
@@ -18,7 +17,7 @@ export default function RecipeListPage() {
   const { data: suggestions, isLoading, isError } = useQuery({
     queryKey: queryKeys.recipes.suggestions(currentParams),
     queryFn: () => fetchSuggestions(currentParams),
-    placeholderData: (previousData) => previousData, // Smooth transition between updates
+    placeholderData: (previousData) => previousData, // smooth transition between updates
   });
 
   return (
@@ -56,7 +55,7 @@ export default function RecipeListPage() {
                 <td>
                   <Link to={`/recipes/${encodeURIComponent(r.recipe)}`}><strong>{r.recipe}</strong></Link>
                 </td>
-                <td style={{ color: r.missing_ingredients > 0 ? 'red' : 'green' }}>
+                <td style={{ color: r.missing_ingredients > 0 ? '#cd6143b7' : 'lightgreen' }}>
                    {r.missing_ingredients} / {r.nbr_of_ingredients}
                 </td>
                 <td title={r.expiring_ingredients}>
@@ -70,7 +69,7 @@ export default function RecipeListPage() {
         </table>
       )}
 
-      {/* This renders the Details Modal when a recipe is clicked */}
+      {/* this renders the Details Modal when a recipe is clicked */}
       <Outlet />
     </div>
   );

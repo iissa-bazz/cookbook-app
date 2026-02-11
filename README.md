@@ -42,3 +42,16 @@ docker compose up -d
 1. **Dynamic Suggestions:** On the main page, adjust the "Portions" or "Scope" (days until expiration). The table updates reactively to show the most cost-effective recipes.
 2. **Pantry Logic:** The app tracks missing vs. expiring ingredients. Check a recipe's detail view to see exactly what you need.
 3. **Error Handling:** The system includes a global Error Boundary and React Query `throwOnError` integration to catch and display API failures gracefully.
+
+
+---
+
+```mermaid
+erDiagram
+    NUTRIENTS ||--o{ INGREDIENTS : "groups"
+    INGREDIENTS ||--o{ MISE_EN_PLACE : "uses"
+    RECIPES ||--o{ MISE_EN_PLACE : "contains"
+    RECIPES ||--o{ MENU_PLAN : "scheduled in"
+    DIETS ||--o{ PREFERENCES : "defines"
+    INGREDIENTS }o--|| PREFERENCES : "excluded by"
+```

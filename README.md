@@ -14,7 +14,8 @@ Clone the repository and start the orchestration. This will build the React fron
 
 1. Clone the repo: `git clone git@github.com:iissa-bazz/cookbook-app.git`
 2. Setup environment: `cp .env.example .env`
-3. Start: `docker compose --profile seed up -d`
+3. Start: `docker compose up -d`
+4. Initialize the db (only on first run): `docker compose run --rm seed`
 
 
 After the initial build, you can run the application normally with:

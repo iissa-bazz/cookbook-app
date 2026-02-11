@@ -24,7 +24,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: grid;
+  display: flex;           /* Alternatively to justify-content and align-items, `display: grid` fixes centering too */
+  justify-content: center; /* Horizontal centering for Flex */
+  align-items: center;     /* Vertical centering for Flex */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;

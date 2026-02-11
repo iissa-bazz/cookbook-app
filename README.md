@@ -23,6 +23,7 @@ After the initial build, you can run the application normally with:
 docker compose up -d 
 ```
 
-### Open the browser
+### Access the App
 
-You can access the page by navigating to http://localhost
+- Frontend: http://localhost
+- API Documentation (Swagger): http://localhost:8000/docs

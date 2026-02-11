@@ -48,7 +48,7 @@ services:
       - ./frontend:/app
       - /app/node_modules # Prevents local node_modules from overwriting container
     ports:
-      - "5173:5173"
+      - "80:5173"
     environment:
       - VITE_API_URL=${VITE_API_URL}
     depends_on:

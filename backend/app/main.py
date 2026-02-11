@@ -35,7 +35,7 @@ def get_recipes(db: Session = Depends(get_db)):
     return db.query(Ingredient).all()
 
 
-@app.get("/mise_en_place")
+@app.get("/instructions")
 def get_recipes(db: Session = Depends(get_db)):
     return db.query(Instruction).all()
 

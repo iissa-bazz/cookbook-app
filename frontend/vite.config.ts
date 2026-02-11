@@ -1,20 +1,25 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    host: true, // Needed for Docker
-    port: 5173,
-    proxy: {
-      // This matches the baseURL: '/api' in the axios client
-      '/api': {
-        target: 'http://backend:8000', // FastAPI backend
-        changeOrigin: true,
-        // strips the '/api' prefix before sending it to the backend so '/api/recipes/suggestions' becomes '/recipes/suggestions'
-        rewrite: (path) => path.replace(/^\/api/, ''),
+export default defineConfig(({ mode }) => {
+  // Load env file based on `mode` in the current working directory.
+  const env = loadEnv(mode, process.cwd(), '')
+  // Log this to your terminal so you can see what Vite is seeing
+  console.log('--- Vite Proxy Target:', env.VITE_API_TARGET || 'http://localhost:8000 (Default)');
+
+  return {
+    plugins: [react()],
+    server: {
+      host: true,
+      port: 5173,
+      proxy: {
+        '/api': {
+          // Use the environment variable, defaulting to local if not set
+          target: env.VITE_API_TARGET || 'http://localhost:8000',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, ''),
+        },
       },
     },
-  },
+  }
 })

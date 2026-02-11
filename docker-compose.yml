@@ -50,7 +50,7 @@ services:
     ports:
       - "80:5173"
     environment:
-      - VITE_API_URL=${VITE_API_URL}
+      - VITE_API_TARGET=${VITE_API_TARGET}
     depends_on:
       - backend
 

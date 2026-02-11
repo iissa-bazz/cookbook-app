@@ -61,8 +61,8 @@ export default function RecipeListPage() {
                 <td title={r.expiring_ingredients}>
                    {r.expiring_within_scope} items
                 </td>
-                <td>${r.price_per_portion.toFixed(2)}</td>
-                <td><strong>${r.cost.toFixed(2)}</strong></td>
+                <td>CHF {r.price_per_portion.toFixed(2)}</td>
+                <td><strong>CHF {r.cost.toFixed(2)}</strong></td>
               </tr>
             ))}
           </tbody>

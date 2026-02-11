@@ -13,7 +13,7 @@ A full-stack demo application designed to optimize kitchen management. It sugges
 Clone the repository and start the orchestration. This will build the React frontend, FastAPI backend, and initialize the PostgreSQL database.
 
 ```bash
-git clone https://github.com/iissa-bazz/cookbook.git
+git clone git@github.com:iissa-bazz/cookbook-app.git
 cd cookbook
 docker compose --profile seed up -d 
 ```

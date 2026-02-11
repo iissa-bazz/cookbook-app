@@ -12,5 +12,7 @@ frontend/.env
 frontend/.env.local
 
 # Docker & OS
+response.json
+.env
 .DS_Store
 postgres_data/
